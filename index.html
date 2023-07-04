@@ -31,7 +31,7 @@
     form.addEventListener('submit', handleForm);
 
     /* create WebSocket Connection */
-    const socket = new WebSocket('ws://ssh.driikolu.fr:8765'); //Will be changed in the future
+    const socket = new WebSocket('wss://ssh.driikolu.fr:8765'); //Will be changed in the future
     socket.addEventListener('open', function (event) {
 	console.log("Connected to the server");
     });
